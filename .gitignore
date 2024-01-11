@@ -1,0 +1,36 @@
+# Módulos y dependencias instaladas
+node_modules/
+
+# Archivos generados durante la construcción
+dist/
+build/
+*.log
+
+# Archivos de configuración
+.env
+.env.local
+.env.*.local
+
+# Dependiendo del entorno, puedes querer ignorar también estos archivos
+npm-debug.log
+yarn-error.log
+
+# Algunas herramientas específicas de IDEs
+.vscode/
+.idea/
+
+# Archivos de respaldo y carpetas temporales
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.cache/
+logs/
+
+ 
+ # Node.js
+node_modules/
+
+# npm
+*.log
+

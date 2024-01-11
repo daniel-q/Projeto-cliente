@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="shortcut icon" href="img/icons/icon-48x48.png" /> -->
+
+    <title>Cadastro</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    #cartao {
+        width: 300px;
+        background-color: #da781b;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #numero-cartao,
+    #nome-titular,
+    #validade,
+    #cvv {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <main class="d-flex w-100">
+        <div class="container d-flex flex-column">
+            <div class="row vh-100">
+                <div class="col-sm-12 col-md-12 col-lg-12 mx-auto d-table h-100">
+                    <div class="d-table-cell align-middle">
+
+                        <div class="text-center mt-4">
+                            <h1 class="h2">Bem vindo(a)</h1>
+                            <p class="lead">
+                                Dê um passo para melhor experiência possível para suas finanças.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 mx-auto">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="m-sm-4">
+
+                                            <form id="formulario">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="nome">Nome do Titular:</label>
+                                                    <input class="form-control form-control-lg" type="text" id="nome"
+                                                        name="nome" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Email</label>
+                                                    <input class="form-control form-control-lg" type="email"
+                                                        name="email" placeholder="Insira seu email" />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Senha</label>
+                                                    <input class="form-control form-control-lg" type="password"
+                                                        name="password" placeholder="Insira uma senha" />
+                                                </div>
+                                                <div class="text-center mt-3">
+                                                    <a href="index.html" class="btn btn-lg btn-primary">Cadastrar</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 mx-auto">
+                                <div id="cartao">
+                                    <div id="numero-cartao">Número do Cartão:11111111111111 </div>
+                                    <div id="nome-titular">Nome do Titular: </div>
+                                    <div id="validade">Validade:11/29 </div>
+                                    <div id="cvv">CVV:877 </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/card.js"></script>
+</body>
+
+</html>

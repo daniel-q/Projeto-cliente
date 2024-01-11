@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>Login</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="d-flex w-100">
+    <div class="container d-flex flex-column">
+      <div class="row vh-100">
+        <div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+          <div class="d-table-cell align-middle">
+            <div class="text-center mt-4">
+              <h1 class="h2">Sistema Banário</h1>
+              <p class="lead">SOFTEX PE | UFRN</p>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="m-sm-4">
+                  <div class="text-center">
+                    <img src="img/avatars/avatar.png" alt="Charles Hall" class="img-fluid " width="132" height="132" />
+                  </div>
+                  <form id="loginForm" action="/login" method="post">
+                    <div class="mb-3">
+                      <label class="form-label">Código PAN</label>
+                      <input class="form-control form-control-lg" type="text" name="pan" placeholder="Digite o Código PAN" />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Vencimento (mm/aaaa)</label>
+                      <input class="form-control form-control-lg" type="text" name="data" id="data" placeholder="Digite a Data" />
+                    </div>
+					<div class="mb-3">
+						<label class="form-label">Senha</label>
+						<input class="form-control form-control-lg" type="password" name="senha" placeholder="Digite a Senha" />
+					  </div>
+
+                    <!-- Adiciona campos ocultos para a assinatura e a chave secreta -->
+                    <input type="hidden" name="assinatura" id="assinatura" /> 
+					<input type="hidden" name="dataf" id="dataf" />
+                   <!-- <input type="hidden" name="chaveSecreta" id="chaveSecreta" value="<%= process.env.SECRET_KEY %>"/> -->
+
+                    <div class="text-center mt-3">
+                      <!-- Adiciona a chamada à função de assinatura no evento 'submit' -->
+                      <button type="button" onclick="assinarEEnviar()" class="btn btn-lg btn-primary">Entrar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+
+
+    function assinarDigitalmente(dados, chaveSecreta) {
+      const hmac = CryptoJS.HmacSHA256(CryptoJS.enc.Utf8.parse(JSON.stringify(dados)), chaveSecreta);
+      return hmac.toString(CryptoJS.enc.Hex);
+    }
+
+    function assinarEEnviar() {
+		console.log("teste")
+      const pan = document.querySelector('input[name="pan"]').value;
+      const data = document.querySelector('input[name="data"]').value;
+
+      // Formata a data para o formato aaaa-mm-dd
+      const [mes, ano] = data.split('/');
+      const dataFormatada = `${ano}-${mes.padStart(2, '0')}-01`;
+
+      // Objeto com os dados para assinatura
+      const dadosParaAssinatura = {
+        pan: pan,
+        data: dataFormatada
+        // Adicione outros campos conforme necessário
+      };
+
+      // Obtém a chave secreta do campo oculto
+      const chaveSecreta = 'wqrteq21245ys#d';
+
+      // Gera a assinatura
+      const assinatura = assinarDigitalmente(dadosParaAssinatura, chaveSecreta);
+
+      // Atualiza o valor do campo 'assinatura' no formulário
+      document.getElementById('assinatura').value = assinatura;
+	  document.getElementById('dataf').value = dataFormatada;
+
+      // Submete o formulário
+	  
+      document.getElementById('loginForm').submit();
+    }
+	
+  </script>
+
+</body>
+
+</html>

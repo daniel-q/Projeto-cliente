@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- <link rel="shortcut icon" href="img/icons/icon-48x48.png" /> -->
+
+	<title>Area Administrativa</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="/">
+					<span class="align-middle">SOFTEX PE</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Menu
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="/">
+							<i class="align-middle" data-feather="sliders"></i> <span
+								class="align-middle">Dashboard</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/profile">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Perfil</span>
+						</a>
+					</li>
+
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+								aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 Novas Notificações
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">A definir</div>
+												<div class="text-muted small mt-1">A definir.</div>
+												<div class="text-muted small mt-1">A definir</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">A definir</div>
+												<div class="text-muted small mt-1">A definir</div>
+												<div class="text-muted small mt-1">A definir</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">A definir</div>
+												<div class="text-muted small mt-1">A definir</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">A definir</div>
+												<div class="text-muted small mt-1">A definir
+												</div>
+												<div class="text-muted small mt-1">A definir</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Ver todas notoficações</a>
+								</div>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+								data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+								data-bs-toggle="dropdown">
+								<img src="img/avatars/avatar.png" class="avatar img-fluid rounded me-1"
+									alt="Charles Hall" /> <span class="text-dark">Administrador</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="/profile"><i class="align-middle me-1"
+										data-feather="user"></i> Perfil</a>
+
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1"
+										data-feather="help-circle"></i> Suporte</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">Area do Usuário</h1>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header">
+									</div>
+									<div class="card-body">
+
+										<div class="container text-center">
+											<div
+												class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-sm-3 g-md-3 g-lg-3">
+												<div class="col">
+													<a href="#" class="btn btn-primary list-group-item"
+														data-bs-toggle="modal" data-bs-target="#modaldeposito">
+														<div class="p-3"><img src="img/photos/deposito.png"
+																class="img-fluid rounded-circle" alt="Deposito"></div>
+														<div class="col-10 ps-2">
+															<div class="text-dark">Deposito</div>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="#" class="btn btn-primary list-group-item"
+														data-bs-toggle="modal" data-bs-target="#modalsaque">
+														<div class="p-3"><img src="img/photos/saque.png"
+																class="img-fluid" alt="Saque"></div>
+														<div class="col-10 ps-2">
+															<div class="text-dark">Saque</div>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="#" class="btn btn-primary list-group-item"
+														data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+														<div class="p-3"><img src="img/photos/extrato.jpg"
+																class="img-fluid" alt="Extrato"></div>
+														<div class="col-10 ps-2">
+															<div class="text-dark">Extrato</div>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="#" class="btn btn-primary list-group-item"
+													data-bs-toggle="modal" data-bs-target="#modaltransferencia">
+														<div class="p-3"><img src="img/photos/fatura.jpg"
+																class="img-fluid" alt="Transferencia"></div>
+														<div class="col-10 ps-2">
+															<div class="text-dark">Transferencia</div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-xl-6 col-xxl-5 d-flex">
+								<div class="w-100">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="card-body">
+													<div class="row">
+														<div class="col mt-0">
+															<h5 class="card-title">conta</h5>
+														</div>
+
+														<div class="col-auto">
+															<div class="stat text-primary">
+																<i class="align-middle" data-feather="dollar-sign"></i>
+															</div>
+														</div>
+													</div>
+													<h1 class="mt-1 mb-3" id="saldo">R$ 2.382</h1>
+
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-body">
+													<div class="row">
+														<div class="col mt-0">
+															<h5 class="card-title">ooo</h5>
+														</div>
+
+														<div class="col-auto">
+															<div class="stat text-primary">
+																<i class="align-middle" data-feather="credit-card"></i>
+															</div>
+														</div>
+													</div>
+													<h1  class="mt-1 mb-3">14.212</h1>
+
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="card-body">
+													<div class="row">
+														<div class="col mt-0">
+															<h5 class="card-title">Fatura</h5>
+														</div>
+
+														<div class="col-auto">
+															<div class="stat text-primary">
+																<i class="align-middle" data-feather="credit-card"></i>
+															</div>
+														</div>
+													</div>
+													<h1 class="mt-1 mb-3">R$ 300</h1>
+
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-body">
+													<div class="row">
+														<div class="col mt-0">
+															<h5 class="card-title">Total de Saques</h5>
+														</div>
+
+														<div class="col-auto">
+															<div class="stat text-primary">
+																<i class="align-middle"
+																	data-feather="arrow-down-left"></i>
+															</div>
+														</div>
+													</div>
+													<h1 class="mt-1 mb-3">64</h1>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-xxl-7">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+
+										<h5 class="card-title mb-0">Historico recente</h5>
+									</div>
+									<div class="card-body py-3">
+										<div class="chart chart-sm">
+											<canvas id="chartjs-dashboard-line"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+
+			</main>
+
+			<!-- Modal DEPOSITO-->
+			<div class="modal fade" id="modaldeposito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="modaldepositoLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="modaldepositoLabel">DEPOSITAR</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form id="deposit" action="/deposito" method="post">
+								<div class="form-group">
+									<label for="valorDeposito">Valor do Depósito (R$)</label>
+									<input type="number" class="form-control" id="depositoValue" name="depositoValue"
+										placeholder="Informe o valor">
+								</div>
+
+
+								<button type="submit" class="mt-2 btn btn-primary">Confirmar</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal SAQUE-->
+			<div class="modal fade" id="modalsaque" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="modalsaqueLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="modalsaqueLabel">SAQUE</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form id="saque" action="/saque" method="post">
+								<div class="form-group">
+									<label for="valorSaque">Valor do Saque (R$)</label>
+									<input type="number" class="form-control" id="valorSaque" name="valorValue"
+										placeholder="Informe o valor">
+								</div>
+
+
+								<button type="submit" class="mt-2 btn btn-primary">Confirmar</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal EXTRATO-->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="text-center">Extrato Bancário</h2>
+										<hr>
+										<p><strong>Nome do Cliente:</strong> João da Silva</p>
+										<p><strong>Número da Conta:</strong> 123456789</p>
+										<p><strong>Saldo Inicial:</strong> R$ 1.000,00</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Data</th>
+													<th>Descrição</th>
+													<th>Valor (R$)</th>
+													<th>Saldo Atual (R$)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>2022-01-01</td>
+													<td>Depósito Inicial</td>
+													<td>+1.000,00</td>
+													<td>1.000,00</td>
+												</tr>
+												<tr>
+													<td>2022-01-05</td>
+													<td>Pagamento de Conta</td>
+													<td>-100,00</td>
+													<td>900,00</td>
+												</tr>
+												<!-- Adicione mais linhas conforme necessário -->
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+							<button type="button" class="btn btn-primary">Imprimir</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal TRANSFERENCIA-->
+			<div class="modal fade" id="modaltransferencia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="modaltransferenciaLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="modaltransferenciaLabel">Transferencia</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form id="transferencia" action="/transferencia" method="post">
+								<div class="form-group">
+									<label for="valorTransferencia">Valor da Transferencia (R$)</label>
+									<input type="number" class="form-control" id="valorTransferencia" name="valorValue"
+										placeholder="Informe o valor">
+									<label for="valorAgencia">Agencia</label>
+									<input type="number" class="form-control" id="valorAgencia" name="agenciaValueDestino"
+										placeholder="Informe a agencia de destino">
+									<label for="numeroConta">Numero de Conta</label>
+									<input type="number" class="form-control" id="numeroConta" name="n_contaValueDestino"
+										placeholder="Informe a conta de destino">
+								</div>
+
+
+								<button type="submit" class="mt-2 btn btn-primary">Confirmar</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="" target="_blank"><strong>A DEFINIR</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="" data-bs-toggle="modal"
+										data-bs-target="#exampleModal">Termo de Privacidade</a>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Nossos Termos</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="fs-3">Política de Privacidade para projeto integrador Banco.</p>
+					<p class="fs-5">Última atualização: 08/01/2024.</p>
+
+
+					A sua privacidade é importante para nós. É política do projeto integrador Banco
+					respeitar a sua
+					privacidade em relação a qualquer informação sua que possamos coletar no site www.banco.softex.com/
+					e
+					outros sites que possuímos e operamos.
+
+					Solicitamos informações pessoais apenas quando realmente precisamos delas para fornecer um serviço.
+					Fazemos isso por meios justos e legais, com o seu conhecimento e consentimento. Também informamos
+					por que estamos coletando e como será usado.
+
+					Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado.
+					Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e
+					roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.
+
+					Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando
+					exigido por lei.
+
+					A nossa aplicação pode ter links para sites externos que não são operados por nós. Esteja ciente de
+					que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar
+					responsabilidade por suas respectivas políticas de privacidade.
+
+					Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não
+					possamos fornecer alguns dos serviços desejados.
+
+					O uso continuado do nosso site será considerado como aceitação das nossas práticas em torno da
+					privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do
+					usuário e informações pessoais, entre em contato conosco.
+
+					**Informações de Contato:**
+
+					Se tiver alguma dúvida ou preocupação sobre esta Política de Privacidade, por favor, entre em
+					contato conosco pelo e-mail alunos@softex.com.br.
+
+					Esta Política de Privacidade foi criada para projeto integrador banco e é válida para os visitantes
+					do
+					nosso site www.banco.softex.com/ em relação à informação que eles compartilharam e/ou coletaram
+					nesta
+					aplicação. Esta política não é aplicável a qualquer informação coletada offline ou por meio de
+					outros canais que não este site.
+
+					Ao utilizar a nossa aplicação, você concorda com os termos da nossa Política de Privacidade.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	
+
+</body>
+
+</html>
